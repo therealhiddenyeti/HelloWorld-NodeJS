@@ -7,15 +7,15 @@ const server = http.createServer((req, res) => {
  switch (req.url) {
    case "/home":
      res.writeHead(200);
-     res.end("This is Home page");
+     res.end("This is Home page<p>");
      break;
    case "/about":
      res.writeHead(200);
-     res.end("This is About page");
+     res.end("This is About page<p>");
      break;
    default:     
      res.writeHead(200);
-     res.end("This is Default page.  Other pages are /home and /about");
+     res.end("This is Default page.  Other pages are /home and /about<p>");
      break;
  }
 });
